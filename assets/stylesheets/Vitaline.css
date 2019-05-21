@@ -1,0 +1,27 @@
+body {
+    user-select: none;
+}
+
+.nav-link > ion-icon {
+    font-size: 24px;
+    vertical-align: bottom;
+}
+
+table.dataTable tbody tr {
+    background-color: #1e1e24;
+}
+
+.dataTables_wrapper {
+    color: #fff;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-responsive {
+    overflow: auto;
+}
+
+select option, select optgroup {
+    background-color: #1e1e27;
+    color: #c8c8cc;
+}

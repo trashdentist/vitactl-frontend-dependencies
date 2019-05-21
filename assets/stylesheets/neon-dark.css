@@ -1,0 +1,48 @@
+.bg-gay {
+    background-color: #19315a!important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem  hsla(218, 43%, 27%, .5)!important;
+}
+
+
+.shadow {
+    box-shadow: 0 .5rem 1rem  hsla(218, 43%, 27%, .5)!important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem hsla(218, 43%, 27%, .5)!important;
+}
+
+body {
+    text-shadow: 0px 3px 3px #0681DC;
+    background-image: url(/assets/images/worldmap.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 75vw;
+    background-blend-mode: multiply;
+    background-clip: content-box;
+    user-select: none;
+}
+
+.alert {
+    z-index: 99;
+    margin: 20px;
+}
+
+.btn-rgrad {background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);transition:.5s background-position ease-in-out;background-position:initial;text-shadow:none;}
+.btn-rgrad:hover { background-position: right center; }
+
+.nav-item, .alert {
+    text-shadow: none;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    color: #000;
+}

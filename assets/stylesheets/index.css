@@ -1,0 +1,51 @@
+@keyframes burning-wrapper {
+    0% { background-color: hsla(0, 0%, 0%, .5); }
+    10% { background-color: hsla(0, 0%, 0%, .4); }
+    15% { background-color: hsla(0, 0%, 0%, .5); }
+    20% { background-color: hsla(0, 0%, 0%, .3); }
+    30% { background-color: hsla(0, 0%, 0%, .2); }
+    35% { background-color: hsla(0, 0%, 0%, .5); }
+    40% { background-color: hsla(0, 0%, 0%, .6); }
+    50% { background-color: hsla(0, 0%, 0%, .5); }
+    70% { background-color: hsla(0, 0%, 0%, .4); }
+    80% { background-color: hsla(0, 0%, 0%, .1); }
+    100% { background-color: hsla(0, 0%, 0%, .5); }
+}
+
+* {
+    pointer-events: all!important;
+}
+
+body {
+    background: url(/assets/images/overlay.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#anim_hint {
+    position: sticky;
+    top: 5px;
+    left: 5px;
+    z-index: -999;
+    color: #fff;
+    opacity: .9;
+    font-family: 'Bad Script', cursive;
+}
+
+#wrapper {
+    position: fixed;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-color: hsla(0, 0%, 0%, .5);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    overflow-y: scroll
+}
+
+#wrapper.animated {
+    animation-name: burning-wrapper;
+}
+
+#header {
+    text-shadow: 5px 10px 6px black;
+    font-size: 1.4rem;
+}
